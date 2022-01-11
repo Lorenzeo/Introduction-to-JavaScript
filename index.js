@@ -56,7 +56,8 @@ Do the following:
    HINT: look up the Number method
 */
 let year = "1999"
-
+year = parseInt(year)
+console.log(year)
 
 
 /*
