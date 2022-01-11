@@ -119,10 +119,23 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(age,weight){
+  if(age >=1 && weight <=5){
+    return weight * .05
+  }else if(age >=1 && weight <=6 || weight <=10){
+    return weight * .04
+  }else if(age >=1 && weight <=11 || weight <=15){
+    return weight * .03
+  }else if(age >=1 && weight >15){
+    return weight * .02
+  }else if(age <= .166 || age <=.333 ){
+    return weight * .10
+  }else if(age > .333 || age <= .583 ){
+    return weight * .05
+  }else if( age > .583 || age <= 1){
+    return weight * .04
+  }
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -149,7 +162,17 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+  const randomNumber = Math.floor(Math.random() *3)
+  if (randomNumber = 0){
+    return 'rock'
+  }else if (randomNumber = 1){
+    return 'paper'
+  }else if (randomNumber = 2){
+    return 'scissors'
+  }
+  if (user === 'rock' || user === 'paper'|| user === 'scissors')
+    return user
+
 }
 
 
