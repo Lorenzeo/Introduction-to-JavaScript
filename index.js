@@ -169,15 +169,26 @@ function game(user, computer){
     return 'paper'
   }else if (randomNumber = 2){
     return 'scissors'
-  }
-  
-  if (user === 'rock' || user === 'paper'|| user === 'scissors')
-    return user
+  };
 
   if (user === computer){
     return "it's a tie"
-  }else if ( user )
+  };
 
+  if (user === 'rock' && computer === 'scissors'){
+    return 'you win!'
+  }else if(user === 'rock' && computer === 'paper'){
+    return 'you lose!'
+  }else if(user === 'paper' && computer === 'rock'){
+    return 'you win!'
+  }else if(user === 'paper' && computer === 'scissors'){
+    return 'you lose!'
+  }else if(user === 'scissors' && computer === 'paper'){
+    return 'you win!'
+  }else if(user === 'scissors' && computer === 'rock'){
+    return 'you lose!'
+  }
+}
 
 
 
@@ -227,7 +238,7 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(number){
       for ( let i=0; i < number; i--){
-        "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
+       return "${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
         
       }
 }
