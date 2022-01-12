@@ -130,9 +130,9 @@ function hungryDog(weight, age){
     return weight * .02
   }else if(age > .166 && age <=.333 ){
     return weight * .10
-  }else if(age > .333 && age <= .583 ){
+  }else if(age > .333 && age < .583 ){
     return weight * .05
-  }else if(age > .583 && age <= 1){
+  }else if(age >= .583 && age < 1){
     return weight * .04
   }
 }
@@ -160,7 +160,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let randomNumber = Math.floor(Math.random() *3)
+let computer = Math.floor(Math.random() *3)
   
 function game(user, computer){
   randomNumber = computer
@@ -206,7 +206,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  let miles = kilometers * 0.621
+  let miles = kilometers * 0.621371
   return miles
 }
 
@@ -221,7 +221,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
- let feet = cm * .0328
+ let feet = cm / 30.48
  return feet
 }
 
